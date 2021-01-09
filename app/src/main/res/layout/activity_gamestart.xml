@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCF8E8"
+    android:orientation="vertical"
+    tools:context=".gamestart">
+    <ImageView
+        android:id="@+id/tomain"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="20dp"
+        android:src="@drawable/left_arrow"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/nanumr"
+        android:gravity="center"
+        android:text="선택해주세요"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/rock"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/rock"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:id="@+id/paper"
+            android:layout_below="@id/rock"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/paper" />
+        <ImageView
+            android:id="@+id/scissors"
+            android:layout_width="100dp"
+            android:layout_below="@id/paper"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/scissors"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/result"
+        android:layout_below="@id/scissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESULT"
+        android:textStyle="bold"
+        android:fontFamily="@font/nanumr"
+        android:textSize="60dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/try_again"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:text="Try Again"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="@font/nanumr"
+        android:background="@drawable/button"/>
+
+</LinearLayout>
