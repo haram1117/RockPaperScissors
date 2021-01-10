@@ -7,12 +7,13 @@
     android:background="#FCF8E8"
     android:orientation="vertical"
     tools:context=".gamestart">
+
     <ImageView
         android:id="@+id/tomain"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:padding="20dp"
-        android:src="@drawable/left_arrow"/>
+        android:src="@drawable/left_arrow" />
 
     <TextView
         android:layout_width="match_parent"
@@ -26,53 +27,34 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="370dp"
-        android:gravity="center"
-        android:layout_gravity="center">
+        android:layout_height="500dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center">
 
         <ImageView
             android:id="@+id/rock"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/rock"
-            android:layout_marginBottom="20dp"/>
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/rock" />
 
         <ImageView
             android:id="@+id/paper"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             android:layout_below="@id/rock"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="40dp"
             android:src="@drawable/paper" />
+
         <ImageView
             android:id="@+id/scissors"
-            android:layout_width="100dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             android:layout_below="@id/paper"
-            android:layout_height="100dp"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/scissors"/>
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/scissors" />
     </RelativeLayout>
-    <TextView
-        android:layout_gravity="center"
-        android:id="@+id/result"
-        android:layout_below="@id/scissors"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RESULT"
-        android:textStyle="bold"
-        android:fontFamily="@font/nanumr"
-        android:textSize="60dp"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/try_again"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:layout_width="170dp"
-        android:layout_height="70dp"
-        android:text="Try Again"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:fontFamily="@font/nanumr"
-        android:background="@drawable/button"/>
 
 </LinearLayout>

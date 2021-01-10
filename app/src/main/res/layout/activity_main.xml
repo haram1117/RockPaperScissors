@@ -36,5 +36,15 @@
         android:text="GO!"
         android:background="@drawable/button"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="경희대학교 컴퓨터공학과 19 박하람"
+        android:fontFamily="@font/nanumr"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="50dp"/>
 
 </LinearLayout>
