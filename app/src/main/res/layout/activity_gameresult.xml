@@ -9,17 +9,14 @@
     tools:context=".gameresult">
 
 
-    <TextView
+    <ImageView
         android:id="@+id/computerresult"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_margin="50dp"
-        android:fontFamily="@font/nanumr"
-        android:gravity="center"
-        android:text=""
-        android:textSize="60dp"
-        android:textStyle="bold" />
+        android:rotation="180"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/result"
@@ -31,17 +28,13 @@
         android:textSize="60dp"
         android:textStyle="bold" />
 
-    <TextView
+    <ImageView
         android:id="@+id/userresult"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_margin="50dp"
-        android:fontFamily="@font/nanumr"
-        android:gravity="center"
-        android:text=""
-        android:textSize="60dp"
-        android:textStyle="bold" />
+        android:gravity="center" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/try_again"
